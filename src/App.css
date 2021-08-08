@@ -1,0 +1,26 @@
+*{
+  /*margin-top: 10px;*/
+}
+.App {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(236, 245, 245);
+  height: 80%;
+}
+.inner-shape {
+  width: 90%;
+  background-color: white;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+@media (max-width: 1000px) {
+  .App{
+    justify-content: flex-start;
+  }
+  .inner-shape{
+    width: 100%
+  }
+
+}

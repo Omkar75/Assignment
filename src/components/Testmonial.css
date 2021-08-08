@@ -1,0 +1,77 @@
+
+.testmonial{
+    margin: 20px;
+    margin-inline-start: 120px;
+    margin-block-start: 60px;
+    margin-block-end: 60px;
+}
+@media (max-width: 1000px) {
+    .testmonial{
+        margin-inline-start: 50px;
+    }
+}
+.container{
+    margin-top: -50px;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next{
+    background: green;
+    width: 47px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.forwardbtn{
+    background-color: rgb(236, 245, 245);;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    z-index: 1;
+}
+.backwardbtn{
+    background-color: rgb(236, 245, 245);;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.slick-prev{
+    bottom: 0;
+    right: 0;
+}
+.slick-prev::before,
+.slick-next::before{
+    display:none;
+}
+.custom-indicator{
+    position: relative !important;
+    display: block !important;
+    text-align: start !important;
+}
+.custom-indicator li{
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    padding: 5px !important;
+}
+.custom-indicator li.slick-active{
+    border: 4px solid blue;
+    padding: 4px;
+    background-clip: content-box; /* support: IE9+ */
+    background-color: #ccc;
+}
